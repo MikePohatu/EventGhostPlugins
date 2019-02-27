@@ -16,7 +16,8 @@
 
 # This plugin is built using code from the default NetworkReceiver and Broadcaster plugins. The intention of this plugin
 # is to make traversing firewalls easier by being able to have a machine in a subnet act as a relay for messages you 
-# would normal use the Broadcaster plugin for
+# would normal use the Broadcaster plugin for. It receives a message via TCP like the network receiver, then sends it
+# like the broadcaster. 
 
 import eg
 
