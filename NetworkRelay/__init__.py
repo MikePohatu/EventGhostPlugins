@@ -3,7 +3,7 @@
 # This file is a plugin for EventGhost.
 # Copyright (C) 2005-2009 Lars-Peter Voss <bitmonster@eventghost.org>
 #
-# EventGhost is free software; you can redistribute it and/or modify it under
+# This plugin is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License version 2 as published by the
 # Free Software Foundation;
 #
@@ -14,13 +14,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+# This plugin is built using code from the default NetworkReceiver and Broadcaster plugins. The intention of this plugin
+# is to make traversing firewalls easier by being able to have a machine in a subnet act as a relay for messages you 
+# would normal use the Broadcaster plugin for
+
 import eg
 
 eg.RegisterPlugin(
     name = "Network Event Relay",
     description = "Receives events from Network Event Sender plugins and relays the message via UDP broadcast",
     version = "1.0",
-    author = "Bitmonster, Mike Pohatu",
+    author = "Mike Pohatu",
     guid = "{F537B1B4-7B32-4364-B034-D2A706D91252}",
     canMultiLoad = True,
     icon = (
@@ -34,7 +38,7 @@ eg.RegisterPlugin(
         "WRlxsa4sp1ydkiRxkstmlEFRrWT4nrRer3vmlf6mb883fK8AoF1d+Bqc6Xkt+cufT6e3"
         "dnb9DJJrq+uYpunZ2WcFfA0ol8v8N5Qgvr/EN8Lzfbs+L0goAAAAAElFTkSuQmCC"
     ),
-    url = "http://www.eventghost.net/forum/viewtopic.php?f=4&t=959",
+    url = "https://github.com/MikePohatu/EventGhostPlugins",
 )
 
 import wx

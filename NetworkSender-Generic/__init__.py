@@ -3,7 +3,7 @@
 # This file is a plugin for EventGhost.
 # Copyright (C) 2005-2009 Lars-Peter Voss <bitmonster@eventghost.org>
 #
-# EventGhost is free software; you can redistribute it and/or modify it under
+# This plugin is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License version 2 as published by the
 # Free Software Foundation;
 #
@@ -14,15 +14,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-import eg
+# This plugin is an edit of the NetworkSender plugin. This plugin differs in that 
+# the destination and port are set on the action rather than the plugin. This allows 
+# the same plugin to reused for many destination devices if desired
 
 eg.RegisterPlugin(
     name = "Network Event Sender Generic",
     version = "1.1",
-    author = "Bitmonster",
+    author = "Mike Pohatu",
     guid = "{3D26EF82-9F30-44BB-B89D-4FEA5F47FE08}",
     description = (
-        "Sends events to an Network Event Receiver plugin through TCP/IP."
+        "Sends events to an Network Event Receiver plugin through TCP/IP. Destination and port are configured on the action"
     ),
     canMultiLoad = True,
     icon = (
