@@ -1,6 +1,8 @@
 # EventGhostPlugins
 
-This repos contains plugins for EventGhost (http://www.eventghost.net/)
+This repos contains plugins for EventGhost (http://www.eventghost.net/). These are updates on the Broadcaster, 
+Network Event Receiver and Network Event Sender plugins, and as such most of the credit for this code should go to 
+the authors of those plugins
 
 
 ## Network Event Relay
